@@ -4,9 +4,9 @@
   "description": "Mobile Testing Project",
   "main": "",
   "dependencies": {
-    "UiPath.MobileAutomation.Activities": "[24.10.0]",
-    "UiPath.System.Activities": "[24.10.7]",
-    "UiPath.Testing.Activities": "[24.10.3]"
+    "UiPath.MobileAutomation.Activities": "[24.10.3]",
+    "UiPath.System.Activities": "[25.2.4]",
+    "UiPath.Testing.Activities": "[25.4.0]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -44,23 +44,73 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "e1dbc3cd-88ea-4ce3-8b77-c8b3f6389657",
+        "testCaseId": "b4a60cdd-604d-477d-9326-7332b58ac252",
         "testCaseType": "TestCase",
-        "fileName": "TestCase.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\HomePage\\TC2_HomePageValidation.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "f7a00525-e0a0-4a7d-88f7-1bae40cab666",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TC1_LoginAndLogout.xaml"
+        "fileName": "TestCases\\LandingPage\\TC1_LoginAndLogout.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "b4a60cdd-604d-477d-9326-7332b58ac252",
+        "testCaseId": "09cc3e13-0dea-4071-8060-ce340bbaca54",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TC2_HomePageValidation.xaml"
+        "fileName": "TestCases\\SideBar\\TC4_SideBarNavigation_8_Options.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "44bb8791-c556-419c-b8c3-0a502f29e587",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\Filters\\TC6_FilterValidation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7f980fe1-c796-4fe2-a59a-cdd6de567e5d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\LandingPage\\TC7_FooterValidations.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5a9a2aac-eda5-4a22-bc26-fc1db25e054d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\OrderProducts\\TC3_Order1ProductCheckoutOrderId.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1b02ad9d-d242-4a00-97da-9531138b4fb2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\OrderProducts\\TC5_Add3Products_Checkout.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "16fe05d7-093f-44dd-8243-9c4dd42d2d94",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\OrderProducts\\TC8_Add3Remove1Product_Checkout.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f7f1f653-4f32-4ce0-bbf5-176a26bb7c96",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\OrderProducts\\TC9_AddAllProducts_ChangeLayout_Checkout.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e16bb722-49a5-4faf-914b-871d9fb27e81",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\OrderProducts\\TC_10_CheckoutWithoutAnyProducts.xaml"
       }
     ],
     "saveToCloud": false

@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/dautopilotgang/DefaultTenant/testmanager_",
+  "defaultProject": {
+    "id": "ff93f5e9-9759-0000-c922-0b48271ba4f2",
+    "name": "SwaglabsTesting",
+    "key": "SWAG"
+  }
 }

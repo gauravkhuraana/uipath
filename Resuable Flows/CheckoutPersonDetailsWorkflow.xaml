@@ -1,0 +1,179 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CheckoutPersonDetailsWorkflow" this:CheckoutPersonDetailsWorkflow.FirstName="Gaurav" this:CheckoutPersonDetailsWorkflow.LastName="Khurana" this:CheckoutPersonDetailsWorkflow.ZipCode="110051" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uma="clr-namespace:UiPath.MobileAutomation.Activities;assembly=UiPath.MobileAutomation.Activities" xmlns:umm="clr-namespace:UiPath.MobileAutomation.Models;assembly=UiPath.MobileAutomation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="FirstName" Type="InArgument(x:String)" />
+    <x:Property Name="LastName" Type="InArgument(x:String)" />
+    <x:Property Name="ZipCode" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>CheckoutPersonDetailsWorkflow_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MobileAutomation.Activities</x:String>
+      <x:String>UiPath.MobileAutomation.Models</x:String>
+      <x:String>UiPath.MobileAutomation.Activities.Enums</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.MobileAutomation.Enums</x:String>
+      <x:String>UiPath.MobileAutomation.Contracts.Target</x:String>
+      <x:String>UiPath.MobileAutomation.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CheckoutPersonDetailsWorkflow" sap:VirtualizedContainerService.HintSize="864,1776" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uma:MobileDeviceConnection CollectPageSource="{x:Null}" CollectScreenshot="{x:Null}" CvApiKey="{x:Null}" CvServer="{x:Null}" CvUseLocalServer="{x:Null}" MirroringEnabled="{x:Null}" StartPage="{x:Null}" AppiumUrl="http://127.0.0.1:4723" DisplayName="devices | apptesting" sap:VirtualizedContainerService.HintSize="518,1753" sap2010:WorkflowViewState.IdRef="MobileDeviceConnection_1" LoggingEnabled="False" LoggingFolderPath="C:\Users\gakhuran\AppData\Local\Temp\UiPath Mobile Automation Logs" SingleInstanceForDevelopment="True" VideoRecordingEnabled="False" VideoRecordingQuality="Normal" VideoRecordingTimeLimit="600" WaitForPageUpdateDevelopment="True">
+      <uma:MobileDeviceConnection.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="platformName">Android</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="platformVersion">11</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="deviceName">emulator-5554</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="appPackage">com.swaglabsmobileapp</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="appActivity">com.swaglabsmobileapp.MainActivity</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="app">D:\uipath\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk</InArgument>
+      </uma:MobileDeviceConnection.Arguments>
+      <uma:MobileDeviceConnection.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="UiPathScopeContext" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1625" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="450,1565" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uma:Tap DelayAfter="{x:Null}" DelayBefore="{x:Null}" Timeout="{x:Null}" DisplayName="Tap" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="Tap_1" RequiresInitialization="False" TapType="Single">
+                <uma:Tap.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="270, 29, 40, 40" FriendlyName="Tap" FullSelector="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-Cart' /&gt;&#xD;&#xA;&lt;mbl android:className='android.view.ViewGroup' idx='2' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-Cart' /&gt;&lt;mbl android:className='android.view.ViewGroup' idx='2' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-Cart' id='' text='' /&gt;&#xD;&#xA;&lt;mbl android:className='android.view.ViewGroup' id='' accessibilityId='' text='' check:text='' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-Cart' id='' text='' /&gt;&lt;mbl android:className='android.view.ViewGroup' id='' accessibilityId='' text='' check:text='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK4SURBVFhH7ZVJTBNxFMbfTKe0tY3GUJaKK0RoowkgFhEi2KJEjDEkXoxRbx6NiZ6MB2PixcSTHuRCwFRvetDgTQNdgomyXLTUG1pbqCgVuk2Xmb+HURxemaVhAgf4ZU7f9ybfvPdfhiKEwEZAY2G92ApeNzZfMLV8nEg6FevrRTZTW2ftH0SiJoiCk4nvTXZs0/Su91N0uRXpa+d/MPB84euM2Ivfvc2OBcofPtrWd0Gsa4JojWmaOVArfozdPQDA+kbEL2iF3OYydbkBgPV7geext2ZEo16NWXdH4dtM1cvhssZmQVnqf0yyOVwnja6i0nLpClYVg+P37iQ9Qztu3Np+/aagRBob+FQS10ljuXh55/0HWFUMZkfezV+7amhqqXzxWlDUd5x6/pRb+GV9MmA6fQZ7AEBk4dPpsGN/uH4PF1/Aniz84mK4fm/Yvo9PJrFHCCFEbnMBAGUyGVrbCMexfi/2ZMkEvIQrlLU4KbMZewAKu1rA2OkCANY3ig1ZhEMonItVUQ42dbkAgPWPguxuWAEhwoca1xLM1B1kanZzP+fzwU/YkyAfCnI/Yrpqm76+AXv/UA5ennbGq/YKY70Kc1YffLKku1OoFN6SQl1w+wlKr89NTfJLS9grgiQS7MQ4xTCGjk7siVAVTJnNhpZWwhWyY37sFZEJ+IArlB1x0hYL9kSoCi5p2lm/sMAubKxE4cpcJh+anjt3CqvSVA+/1dsdWBWhtmO93cFU2bAqAVNlk08toWPNUdux5pQQnHw2FHUenjvbnf8Swh4AAOQmPs66O6LHm9Nv/v5DZVA7av53PHKsEThOuIErBjy4AiB2vicX/AwAtNlSMxkEnQ5XiCihY43BP2hpEp7ByNFDs73uXGgae4QQQrLjH6Ku9khbU2r4FfaKUDtqzdmwUW8FrxubL/gPpZG/j2t0+mcAAAAASUVORK5CYII=" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="" />
+                </uma:Tap.Target>
+              </uma:Tap>
+              <uma:Tap DelayAfter="{x:Null}" DelayBefore="{x:Null}" Timeout="{x:Null}" DisplayName="Tap" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="Tap_2" RequiresInitialization="False" TapType="Single">
+                <uma:Tap.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="110, 313, 101, 24" FriendlyName="Tap" FullSelector="&lt;mbl android:className='android.widget.TextView' text='CHECKOUT' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.widget.TextView' text='CHECKOUT' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.widget.TextView' text='CHECKOUT' id='' accessibilityId='' check:text='CHECKOUT' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.widget.TextView' text='CHECKOUT' id='' accessibilityId='' check:text='CHECKOUT' /&gt;" ImageBase64="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" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="CHECKOUT" />
+                </uma:Tap.Target>
+              </uma:Tap>
+              <uma:SetText DelayAfter="{x:Null}" DelayBefore="{x:Null}" SecureText="{x:Null}" Timeout="{x:Null}" ClearText="False" DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="416,203" sap2010:WorkflowViewState.IdRef="SetText_1" RequiresInitialization="False" SendNewLine="False" TapBefore="Long" Text="[FirstName]">
+                <uma:SetText.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="40, 189, 240, 49" FriendlyName="Set Text" FullSelector="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-First Name' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-First Name' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-First Name' id='' text='First Name' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-First Name' id='' text='First Name' /&gt;" ImageBase64="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" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="First Name" />
+                </uma:SetText.Target>
+              </uma:SetText>
+              <uma:SetText DelayAfter="{x:Null}" DelayBefore="{x:Null}" SecureText="{x:Null}" Timeout="{x:Null}" ClearText="False" DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="416,203" sap2010:WorkflowViewState.IdRef="SetText_2" RequiresInitialization="False" SendNewLine="False" TapBefore="Long" Text="[LastName]">
+                <uma:SetText.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="40, 262, 240, 49" FriendlyName="Set Text" FullSelector="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Last Name' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Last Name' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Last Name' id='' text='Last Name' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Last Name' id='' text='Last Name' /&gt;" ImageBase64="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" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="Last Name" />
+                </uma:SetText.Target>
+              </uma:SetText>
+              <uma:SetText DelayAfter="{x:Null}" DelayBefore="{x:Null}" SecureText="{x:Null}" Timeout="{x:Null}" ClearText="False" DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="416,203" sap2010:WorkflowViewState.IdRef="SetText_3" RequiresInitialization="False" SendNewLine="False" TapBefore="Long" Text="[ZipCode]">
+                <uma:SetText.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="40, 335, 240, 49" FriendlyName="Set Text" FullSelector="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Zip/Postal Code' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Zip/Postal Code' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Zip/Postal Code' id='' text='Zip/Postal Code' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.widget.EditText' accessibilityId='test-Zip/Postal Code' id='' text='Zip/Postal Code' /&gt;" ImageBase64="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" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="Zip/Postal Code" />
+                </uma:SetText.Target>
+              </uma:SetText>
+              <uma:PressHardwareButton DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Press Hardware Button" HardwareButton="BackButton" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="PressHardwareButton_1" RequiresInitialization="False" />
+              <uma:Tap DelayAfter="{x:Null}" DelayBefore="{x:Null}" Timeout="{x:Null}" DisplayName="Tap" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="Tap_3" RequiresInitialization="False" TapType="Single">
+                <uma:Tap.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="10, 551, 300, 44" FriendlyName="Tap" FullSelector="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-CONTINUE' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-CONTINUE' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-CONTINUE' id='' text='' check:text='' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.view.ViewGroup' accessibilityId='test-CONTINUE' id='' text='' check:text='' /&gt;" ImageBase64="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" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="">
+                    <umm:Target.TapOffset>
+                      <umm:TapOffset OffsetX="0" OffsetXArgument="0" OffsetY="0" OffsetYArgument="0" TapOffsetType="DeviceIndependentPixels" />
+                    </umm:Target.TapOffset>
+                  </umm:Target>
+                </uma:Tap.Target>
+              </uma:Tap>
+              <uma:ElementExists DelayAfter="{x:Null}" DelayBefore="{x:Null}" Exists="{x:Null}" Timeout="{x:Null}" DisplayName="Element Exists" sap:VirtualizedContainerService.HintSize="416,140" sap2010:WorkflowViewState.IdRef="ElementExists_1" RequiresInitialization="False">
+                <uma:ElementExists.Target>
+                  <umm:Target Accuracy="0.8" DesignTimeRectangle="10, 229, 300, 26" FriendlyName="Element Exists" FullSelector="&lt;mbl android:className='android.widget.TextView' text='Payment Information:' /&gt;&#xD;&#xA;" FullSelectorArgument="&lt;mbl android:className='android.widget.TextView' text='Payment Information:' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.widget.TextView' text='Payment Information:' id='' accessibilityId='' check:text='Payment Information:' /&gt;&#xD;&#xA;" FuzzySelectorArgument="&lt;mbl android:className='android.widget.TextView' text='Payment Information:' id='' accessibilityId='' check:text='Payment Information:' /&gt;" ImageBase64="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" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="Payment Information:" />
+                </uma:ElementExists.Target>
+              </uma:ElementExists>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uma:MobileDeviceConnection.Body>
+      <uma:MobileDeviceConnection.HttpHeaders>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </uma:MobileDeviceConnection.HttpHeaders>
+    </uma:MobileDeviceConnection>
+  </Sequence>
+</Activity>

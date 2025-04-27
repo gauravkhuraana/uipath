@@ -1,6 +1,6 @@
 {
   "GenerateCrossPlatformAttributes": false,
-  "GenerateSelectorsForInnerElements": true,
+  "GenerateSelectorsForInnerElements": false,
   "Connections": [
     {
       "Name": "devices",
@@ -13,7 +13,9 @@
       "WaitForPageUpdate": true,
       "Capabilities": {
         "appPackage": "com.swaglabsmobileapp",
-        "appActivity": "com.swaglabsmobileapp.MainActivity"
+        "appActivity": "com.swaglabsmobileapp.MainActivity",
+        "launchTimeout": "999999",
+        "adbExecTimeout": "3000000"
       },
       "GeoLocation": null,
       "LoggingModel": {
