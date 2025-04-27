@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Logo",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "CXFaTkzrW0uu4N-sIBzqDQ",
+  "Reference": "qfATvwIeR0mILQDtE0poBQ/CXFaTkzrW0uu4N-sIBzqDQ",
+  "ParentRef": "qfATvwIeR0mILQDtE0poBQ/oVq8A4keIE26ckxhPPmuSQ",
+  "Created": "2025-04-27T02:42:45.976795Z",
+  "Updated": "2025-04-27T02:42:45.976795Z",
+  "CreatedBy": [
+    "UiPath.MobileAutomation, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

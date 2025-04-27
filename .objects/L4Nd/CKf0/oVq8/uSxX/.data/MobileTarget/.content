@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Target Accuracy="0.8" ContentHash="1EKeEzvScEyOu4bUiR4-fA" DesignTimeRectangle="131, 351, 59, 24" FriendlyName="Tap" FullSelector="&lt;mbl android:className='android.widget.TextView' text='LOGIN' /&gt;" FullSelectorArgument="&lt;mbl android:className='android.widget.TextView' text='LOGIN' /&gt;" FuzzyAccuracy="0.5" FuzzySelector="&lt;mbl android:className='android.widget.TextView' text='LOGIN' id='' accessibilityId='' check:text='LOGIN' /&gt;" FuzzySelectorArgument="&lt;mbl android:className='android.widget.TextView' text='LOGIN' id='' accessibilityId='' check:text='LOGIN' /&gt;" Occurence="0" SearchSteps="Selector, FuzzySelector, Image" Text="LOGIN" xmlns="clr-namespace:UiPath.MobileAutomation.Models;assembly=UiPath.MobileAutomation">
+  <imageRef attrName="ImageBase64" xmlns="">0ly6azs0CYU6MMxlozLl-tg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="ecfca304d6be33671e4f2ffabe35d932.png" xmlns="">0OX-RqRWpwU-esx16P2LXkg</imageRef>
+</Target>

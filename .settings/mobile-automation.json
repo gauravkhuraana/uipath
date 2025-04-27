@@ -1,0 +1,54 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "devices",
+      "Description": null,
+      "Url": "http://127.0.0.1:4723",
+      "PlatformName": "Android",
+      "PlatformVersion": "11",
+      "DeviceName": "emulator-5554",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "appPackage": "com.swaglabsmobileapp",
+        "appActivity": "com.swaglabsmobileapp.MainActivity"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    }
+  ],
+  "Applications": [
+    {
+      "$id": "1",
+      "Name": "apptesting",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "D:\\uipath\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
+          },
+          "StartPage": null
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "LogsPath": "%TEMP%\\UiPath Mobile Automation Logs",
+  "Variables": {},
+  "HttpHeaders": {}
+}

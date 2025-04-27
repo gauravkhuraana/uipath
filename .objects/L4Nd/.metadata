@@ -1,0 +1,14 @@
+﻿{
+  "Name": "SwagLabs",
+  "Type": "App",
+  "Id": "L4NdEUwgrU61uald00Xjuw",
+  "Reference": "qfATvwIeR0mILQDtE0poBQ/L4NdEUwgrU61uald00Xjuw",
+  "Created": "2025-04-27T02:19:47.1229729Z",
+  "Updated": "2025-04-27T02:19:47.6196648Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

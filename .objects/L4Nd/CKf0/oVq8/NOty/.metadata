@@ -1,0 +1,13 @@
+﻿{
+  "Name": "UserName",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "NOtyr79DP0OaclFmIT_h3Q",
+  "Reference": "qfATvwIeR0mILQDtE0poBQ/NOtyr79DP0OaclFmIT_h3Q",
+  "ParentRef": "qfATvwIeR0mILQDtE0poBQ/oVq8A4keIE26ckxhPPmuSQ",
+  "Created": "2025-04-27T02:48:06.4364226Z",
+  "Updated": "2025-04-27T02:48:06.4364226Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
